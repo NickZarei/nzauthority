@@ -42,7 +42,7 @@ export default function Home() {
                 <span className="text-slate-400"> CAD / mo + GST</span>
               </div>
               <ul className="space-y-3 text-slate-300 text-sm mb-8">
-                <li>✓ 2 Weekly Branded Video + 2 Social Post</li>
+                <li>✓ 1 Weekly Branded Video + Social Post</li>
                 <li>✓ Google Business Profile Optimization</li>
                 <li>✓ Basic Automated Lead Capture Form</li>
                 <li>✓ Monthly Strategy Call</li>
@@ -67,7 +67,7 @@ export default function Home() {
                 <span className="text-slate-400"> CAD / mo + GST</span>
               </div>
               <ul className="space-y-3 text-slate-300 text-sm mb-8">
-                <li>✓ 2 Weekly Videos + 3 Social Posts</li>
+                <li>✓ 2 Weekly Videos + 2 Social Posts</li>
                 <li>✓ High-Converting Landing Page Setup</li>
                 <li>✓ CRM & Calendly Integration</li>
                 <li>✓ Local SEO Keyword Strategy</li>
