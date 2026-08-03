@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
-      {/* Hero Section */}
       <header className="max-w-6xl mx-auto px-6 py-20 text-center">
         <span className="text-blue-500 font-semibold tracking-wide uppercase text-sm border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 rounded-full">
           Authority & Growth Systems
@@ -28,7 +27,6 @@ export default function Home() {
           We build automated growth systems that transform high-trust service businesses into market leaders.
         </p>
 
-        {/* Target Niche Badges */}
         <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto mb-10">
           {industries.map((item, index) => (
             <span key={index} className="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-3 py-1.5 rounded-md">
@@ -39,10 +37,10 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link 
-            href="/ai-automation" 
+            href="/services" 
             className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition"
           >
-            Explore AI Systems
+            Explore Growth Systems
           </Link>
           <Link 
             href="/contact" 
@@ -53,7 +51,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Core Services Preview */}
       <section className="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold">Our Core Growth Pillars</h2>
@@ -61,28 +58,22 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Pillar 1 */}
           <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
             <div className="text-blue-400 text-3xl mb-4">🤖</div>
             <h3 className="text-xl font-bold mb-3">AI Automation</h3>
             <p className="text-slate-400 text-sm mb-6">Automate client intake, lead follow-ups, appointment booking, and CRM updates with custom AI workflows.</p>
-            <Link href="/ai-automation" className="text-blue-400 font-semibold text-sm hover:underline">Learn More →</Link>
           </div>
 
-          {/* Pillar 2 */}
           <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
             <div className="text-blue-400 text-3xl mb-4">🌐</div>
             <h3 className="text-xl font-bold mb-3">Website Design</h3>
             <p className="text-slate-400 text-sm mb-6">Ultra-fast, high-converting custom Next.js websites optimized to establish elite authority and capture leads.</p>
-            <Link href="/website-design" className="text-blue-400 font-semibold text-sm hover:underline">Learn More →</Link>
           </div>
 
-          {/* Pillar 3 */}
           <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
             <div className="text-blue-400 text-3xl mb-4">📈</div>
             <h3 className="text-xl font-bold mb-3">SEO & Local Growth</h3>
             <p className="text-slate-400 text-sm mb-6">Dominate local search rankings on Google, outrank competitors, and drive predictable organic inbound traffic.</p>
-            <Link href="/seo" className="text-blue-400 font-semibold text-sm hover:underline">Learn More →</Link>
           </div>
         </div>
       </section>

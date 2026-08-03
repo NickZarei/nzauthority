@@ -15,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans">
-        {/* Navigation Header */}
         <nav className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="text-xl font-bold text-blue-400 tracking-wider">
@@ -42,12 +41,10 @@ export default function RootLayout({
           </div>
         </nav>
 
-        {/* Dynamic Page Content */}
         <div className="flex-grow">
           {children}
         </div>
 
-        {/* Shared Footer */}
         <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
           © {new Date().getFullYear()} NZ Authority Inc. All rights reserved.
         </footer>
