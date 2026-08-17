@@ -58,3 +58,4 @@ export default function AboutPage() {
     </div>
   );
 }
+<img src="/nick.jpg" alt="Nick" className="w-64 h-auto mx-auto rounded-xl my-6" />
