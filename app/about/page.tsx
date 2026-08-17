@@ -3,6 +3,11 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
+    export default function AboutPage() {
+  return (
+    <div className="max-w-4xl mx-auto px-6 py-12">
+      <img src="/nick.jpg" alt="Nick" className="w-64 h-auto mx-auto rounded-xl my-6" />
+      <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
     <div className="max-w-4xl mx-auto px-6 py-12">
       {/* 1. بخش عکس و عنوان اصلی */}
       <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
@@ -58,4 +63,3 @@ export default function AboutPage() {
     </div>
   );
 }
-<img src="/nick.jpg" alt="Nick" className="w-64 h-auto mx-auto rounded-xl my-6" />
