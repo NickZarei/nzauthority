@@ -1,11 +1,36 @@
-export default function ContactPage() {
-  return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-extrabold mb-6 text-blue-400">Contact Us</h1>
-      <p className="text-slate-300 mb-4">Have questions? Reach out to our strategy team.</p>
-      <div className="bg-slate-900 border border-slate-800 p-8 rounded-xl text-slate-300">
-        <p>Email: contact@nzauthority.com</p>
-      </div>
-    </main>
-  );
-}
+const form = document.getElementById('form');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    formData.append("access_key", "96f8e163-00d5-4dfe-8197-9bfd53c7ba1f");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
