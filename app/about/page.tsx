@@ -1,12 +1,17 @@
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-12">
       {/* بخش عکس و عنوان اصلی */}
       <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-        <img
+        <Image
           src="/nick.jpg"
           alt="Nick Zarei"
+          width={256}
+          height={256}
           className="w-64 h-64 object-cover rounded-2xl shadow-lg"
+          priority
         />
         <div>
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
